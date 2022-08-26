@@ -1,0 +1,2 @@
+pip install -r requirements.txt
+py.test -s -v --html=report.html --self-contained-html

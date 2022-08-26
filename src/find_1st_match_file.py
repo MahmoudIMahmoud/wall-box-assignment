@@ -39,23 +39,4 @@ def find_1st_file(dir_path):
                 if get_size(file_path) < file_size:
                     print("size check")
                     return file_path
-
         return None
-
-    # with os.scandir(dir_path) as dir_contents:
-    #     for entry in dir_contents:
-    #         info = entry.stat()
-    #         print("=" * 30)
-    #         print(entry.name, "\n", info)
-    #         print(f"it is a directory: {entry.is_dir()}")
-    #         print(entry.__getattribute__)
-
-
-if __name__ == "__main__":
-    print(file_size)
-    current_dir = os.getcwd()
-    found = find_1st_file(os.path.abspath(current_dir+"\..\data"))
-    if found is not None:
-        print(f" found the file {found}")
-    else:
-        print("a file with that specs is not found ")

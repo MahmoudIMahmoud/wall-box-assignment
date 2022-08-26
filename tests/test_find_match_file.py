@@ -4,7 +4,6 @@ import pytest
 import sys
 import os
 import stat
-import pdb
 sys.path.append("..")
 from src.find_1st_match_file import find_1st_file
 
@@ -31,12 +30,10 @@ def set_file_mode_exec(fname):
 def my_heleprs():
     print("\n<< setup")
     yield
-    # pdb.set_track()
     if os.path.isfile(os.getcwd()+os.sep+'data'+os.sep+"testfile.x"):
         print("=== found ===")
         os.remove(os.getcwd()+os.sep+'data'+os.sep+"testfile.x")
         print(" REMOVED ")
-
     print("\n teardown>>")
 
 
