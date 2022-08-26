@@ -1,5 +1,5 @@
 ## Wall Box assignment
-###How to run?
+### How to run?
 -   Install the required packages (requirements.txt).
 -       pip install -r requirements
 -   On the root folder run:
