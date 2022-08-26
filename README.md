@@ -4,3 +4,4 @@
 -       pip install -r requirements
 -   On the root folder run:
 -       py.test -s -v --html=report.html --self-contained-html
+-   A nice html report will be produced(a sample is attached).
